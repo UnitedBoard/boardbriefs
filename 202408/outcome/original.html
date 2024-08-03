@@ -1,0 +1,1109 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <title>IO1</title>
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      /*html,
+         body {
+         margin: 0 !important;
+         padding: 0 !important;
+         height: 100% !important;
+         width: 100% !important;
+         } */
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      p {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+      }
+
+      .tleft {
+        text-align: left;
+      }
+
+      .tright {
+        text-align: right;
+      }
+
+      .img_center {
+        float: none;
+        margin: 0 auto;
+      }
+
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        u~div .email-container {
+          min-width: 320px !important;
+        }
+      }
+
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u~div .email-container {
+          min-width: 375px !important;
+        }
+      }
+
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+        u~div .email-container {
+          min-width: 414px !important;
+        }
+      }
+    </style>
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+          <xml>
+            <o:OfficeDocumentSettings>
+              <o:AllowPNG/>
+              <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+          </xml>
+          <![endif]-->
+    <!-- CSS Reset : END -->
+    <style>
+      /* What it does: Hover styles for buttons */
+      .button-td,
+      .button-a {
+        transition: all 100ms ease-in;
+      }
+
+      .button-td-primary-blue:hover,
+      .button-a-primary-blue:hover {
+        background: #3722D3 !important;
+        color: #FFFFFF !important;
+      }
+
+      .button-td-primary-bgreen:hover,
+      .button-a-primary-bgreen:hover {
+        background: #00FF84 !important;
+        color: #002333 !important;
+      }
+
+      .rounded {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 375px) {
+        .buttona {
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .tleft {
+          text-align: center;
+        }
+
+        .tright {
+          text-align: center;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .hide {
+          display: none !important;
+        }
+
+        .mobile-padding {
+          padding: 32px !important;
+        }
+
+        .section-title {
+          padding-left: 26px !important;
+          padding-right: 26px !important;
+        }
+
+        .section-wrap {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .email-title {
+          font-size: 16px !important;
+        }
+
+        .header-wrap {
+          padding-left: 26px !important;
+          padding-right: 26px !important;
+        }
+
+        .mobile-button {
+          width: 100% !important;
+        }
+
+        .mobile-header {
+          padding-left: 35px !important;
+          padding-right: 10px !important;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .buttona {
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .tleft {
+          text-align: center;
+        }
+
+        .tright {
+          text-align: center;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .hide {
+          display: none !important;
+        }
+
+        .email-container {
+          width: 100% !important;
+          margin: auto !important;
+        }
+
+        .email-container-td {
+          width: 100% !important;
+          margin: auto !important;
+        }
+
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+
+        .center-on-narrow {
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+
+        .rtlheader-text {
+          padding-left: 18px !important;
+          padding-right: 18px !important;
+        }
+
+        .rtl-mobile-pad {
+          padding-left: 35px !important;
+          padding-right: 35px !important;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #e2e3e3;">
+    <center style="width: 100%; background-color: #e2e3e3;">
+      <!--[if mso | IE]>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e2e3e3;">
+              <tr>
+                <td>
+                  <![endif]-->
+      <!-- Visually Hidden Preheader Text : BEGIN -->
+      <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;"></div>
+      <!-- Visually Hidden Preheader Text : END -->
+      <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+      <!-- Preview Text Spacing Hack : BEGIN -->
+      <!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+      <div style="display: none; max-height: 0px; overflow: hidden;"> &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; </div>
+      <!-- Preview Text Spacing Hack : END -->
+      <!-- Email Body : BEGIN -->
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="625" style="margin: auto; width:625px; padding-right:2px; padding-left:2px;" class="email-container">
+        <tr>
+          <td>
+            <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td ">
+              <tr>
+                <td>
+                  <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; " class="email-container-td">
+                    <tr>
+                      <td align="center">
+                        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                          <tr>
+                            <td>
+                              <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                                      <tr>
+                                        <td height="5" style="font-size:5px; line-height:5px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td height="5" style="font-size:5px; line-height:5px;">&nbsp;</td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- ======= Pre-Header ======= -->
+            <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td">
+              <tr>
+                <td>
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td " style="">
+                    <tr>
+                      <td>
+                        <table border="0" width="250" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; float:left;" class="email-container-td">
+                          <!-- ======= section image 290 X any height ====== -->
+                          <tr>
+                            <td height="15" style="font-size:5px; line-height:15px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" class="section-img">
+                              <a href="https://unitedboard.org/" target="_blank" style=" border-style: none !important; border: 0 !important;" class="editable_img">
+                                <img src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/719f2623-624f-60fc-977a-da2bc8d06511.png" style="display: block; width:230px; max-width:230px;" width="230" border="0" alt="section image" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="15" style="font-size:5px; line-height:15px;" class="hide">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <table border="0" width="190" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; float:right;" class="email-container-td">
+                          <tr>
+                            <td height="20" style="font-size:5px; line-height:20px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <table align="center" width="120" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                                <tr>
+                                  <td height="10" style="font-size:10px; line-height:10px;" class="hide">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <table border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td>
+                                          <a href="https://www.facebook.com/profile.php?id=61556099849582" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/65ea3bc8-c148-404a-44c3-0b5d7df3a1f0.png" width="32" border="0" style="display: block; width: 32px; min-width:32px;" alt="facebook" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://twitter.com/unitedboard1922   " target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/b05c8e3c-4d48-6d0e-ffd6-c20881668ac0.png" width="32" border="0" style="display: block; width: 32px; min-width:32px;" alt="X" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://hk.linkedin.com/company/united-board-for-christian-higher-education-in-asia" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" width="32" border="0" style="display: block; width: 32px; min-width:32px;" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/2ded43f0-59aa-7e61-669f-5fe98f2f24c8.png" alt="linkedin" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://www.instagram.com/unitedboard1922/" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" width="32" border="0" style="display: block; width: 32px; min-width:32px;" src="https://mcusercontent.com/614876d209af876013436a98c/images/3fcf2749-ad1b-d56e-1fa9-e1a4be6fb58f.png" alt="insta" />
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- ======= end section ======= -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- ======= Section Details ======= -->
+            <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td">
+              <tr>
+                <td>
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container">
+                    <tr>
+                      <td>
+                        <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td ">
+                          <tr>
+                            <td height="15" style="font-size:20px; line-height:15px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" mc:edit="t1a" style="color:#055d30;font-weight: bold;font-family:Poppins, Helvetica, Georgia, serif, Arial !important;font-size:50px;line-height:52px;" class="text_color">
+                              <!-- ======= section subtitle ====== -->
+                              <div class="editable_text" style="line-height:40px;">
+                                <span class="text_container"> Board Briefs</span>
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="5" style="font-size:5px; line-height:5px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" mc:edit="t1a" style="color:#055d30;font-weight: bold;font-family:Poppins, Helvetica, Georgia, serif, Arial !important;font-size:28px;line-height:52px;" class="text_color">
+                              <!-- ======= section subtitle ====== -->
+                              <div class="editable_text" style="line-height:40px;">
+                                <span class="text_container">
+                                  <span style="color:#f47c20;">March 2024</span>
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="10" style="font-size: 5px; line-height:10px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" class="section-img">
+                              <img mc:edit="b1" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/35bd0afe-91e1-c59d-92bb-4ad803f9fd4e.png" style="display: block; width:100%; max-width:100%;" width="100%" border="0" alt="section image" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-top:5px solid #f47c20;" class="email-container" bgcolor="white">
+                                <tr>
+                                  <td height="5" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="email-container-td" style="padding-left:10px; padding-right:10px;">
+                                      <tr>
+                                        <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" mc:edit="t1b" style="font-size:16px;color: #212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                          <!-- ======= section subtitle ====== -->
+                                          <div class="editable_text" style="line-height:27px;">
+                                            <span class="text_container">
+                                              <p style="font-weight:500;">Dear Trustees,</p>
+                                              <p>I am delighted to announce the launch of our newly revamped <a href="https://unitedboard.org" target="_blank" style="text-decoration:underline;color:#212121;">website</a>, where you will find resources, success stories, and updates on our work in promoting whole person education and supporting our partner institutions. I encourage you to check out the site, discover its features, contact us through the means provided therein, and help to make it a vibrant hub for the United Board community. </p>
+                                            </span>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td align="left" mc:edit="t1b" style="font-size:16px;color: #212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                          <!-- ======= section subtitle ====== -->
+                                          <div class="editable_text" style="line-height:27px;">
+                                            <span class="text_container">
+                                              <p>We are proud of this new look and grateful to Mr. Tommy Cho who led the effort. In the meantime, we have also expanded our presence on social media by setting up new platforms on <a href="https://www.facebook.com/profile.php?id=61556099849582" target="_blank" style="text-decoration:underline;color:#212121;">Facebook</a>, <a href="https://www.instagram.com/unitedboard1922/" target="_blank" style="text-decoration:underline;color:#212121;">Instagram</a> and <a href="https://twitter.com/unitedboard1922" target="_blank" style="text-decoration:underline;color:#212121;">X</a> (formerly Twitter). Please follow us on these platforms to stay informed about our latest activities and news. Engage with us, share our posts, and invite others to join our digital community. Your active participation will amplify our impact and foster meaningful connections. </p>
+                                              <p> Recently, as part of our staff engagement initiative, we held staff development workshops in Hong Kong and in New York. These workshops were facilitated by experienced HR consultants and focused on understanding our individual strengths, fostering collaboration, and enhancing our leadership skills. The feedback from our staff has been overwhelmingly positive; I am thrilled with the growth and enthusiasm that is evident everywhere. </p>
+                                            </span>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center">
+                                          <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                                            
+                                            <tr>
+                                              <td align="left" mc:edit="t1b" style="font-size:16px;color: #212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:27px;">
+                                                  <span class="text_container">
+                                                    <p>Lastly, I will update you on current searches and some organizational restructuring to build on the team-building work we have initiated. A tentative schedule of the June Board Meeting and Study Trip in Indonesia will be appended for your early reference. I will also in the next issue report on my recent trips to the Philippines and other countries.</p>
+                                                    <p>Thank you for your faithful support and commitment to our mission. Together, we will continue to advance Christian higher education in Asia, empowering students and educators for generations to come.</p>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                              <td align="left" class="section-img">
+                                                <img mc:edit="b1" src="https://mcusercontent.com/614876d209af876013436a98c/images/7d22448e-644b-fed1-a6f6-9102b9e403ed.png" style="display: block; width:278px; max-width:278px; float:left;" width="278" border="0" alt="section image" />
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="10" style="font-size: 5px; line-height:10px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t1b" style="font-size:16px;color: #212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:27px;">
+                                                  <span class="text_container">
+                                                    <p style="font-weight:500;">Pareena Gupta Lawrence <br />President, United Board for Christian Higher Education in Asia </p>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:5px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="text-align:left;" class="center-on-narrow">
+                              <table cellspacing="0" cellpadding="0" border="0" width="40%" style="margin:0 !important" class="horizontal-rule">
+                                <tr>
+                                  <td align="center" valign="top" width="40%" height="5" style="background-color:#f47c20;; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 0px;">
+                                    <!--[if gte mso 15]>&nbsp;
+                                                                                       
+                                              <![endif]-->
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- ======= Section Details ======= -->
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td">
+                    <tr>
+                      <td>
+                        <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container">
+                          <tr>
+                            <td>
+                              <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td ">
+                                <tr>
+                                  <td>
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; " class="email-container">
+                                      <tr>
+                                        <td align="center">
+                                          <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="email-container-td" style="padding-left:10px; padding-right:10px;">
+                                            <tr>
+                                              <td height="30" style="font-size:5px; line-height:30px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" class="section-img">
+                                                <img mc:edit="b2" src="https://mcusercontent.com/614876d209af876013436a98c/images/35fd06d4-f21e-0df5-4293-4950cf64be60.png" style="display: block; width:100%; max-width:100%; border-radius:10px;" width="100%" border="0" alt="section image" />
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                            <tr>
+                                              <td align="center" mc:edit="t2b" style="color:#055d30;font-weight: bold;font-family:Roboto, Helvetica, Georgia, serif, Arial !important;font-size:30px;line-height:52px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:40px;">
+                                                  <span class="text_container"> Staff Development </span>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="center-on-narrow">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="150" style="margin:0 auto !important" class="horizontal-rule">
+                                                  <tr>
+                                                    <td align="center" valign="top" width="74" height="3" style="background-color:#055d30; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 0px;">
+                                                      <!--[if gte mso 15]>&nbsp;
+                                                                                       
+                                                                                                                              
+                                                                                  
+                                                                                          
+                                                                <![endif]-->
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+                                                    <p>In July 2022, we conducted an Employee Engagement Survey to better understand the United Board’s staff climate and to strengthen our organizational culture. We wanted to identify our strengths, address our challenges, and identify some specific actions for improvement. The survey, considered together with employee exit interviews, gave us important feedback that we are using to improve our organizational culture. </p>
+                                                    <p>We started conducting regular team meetings, retreats, and informal meals to build camaraderie and the spirit of unity. We have also revamped processes that assure all staff participate and have an opportunity to share their feedback with the senior team. Our goal is to build trust and transparency, to be even more collaborative in the service of our mission. </p>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" class="section-img">
+                                                <img mc:edit="b2" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/555ee0e5-5974-627f-eeb6-5750db60f29d.png" style="display: block; width:100%; max-width:100%; border-radius:10px;" width="100%" border="0" alt="section image" />
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+                                                    <p>To help in these efforts, especially for our management team, we have hired Open Consulting, an HR development organization based out of Delhi. The coaches—Vivek Chopra, Sangeeta Chopra, and Ruby Thapar—have extensive experience working with NGOs and educational institutions. Each of them is skilled and perfectly suited to: </p>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+                                                    <ul style="font-weight:500;">
+                                                      <li> Help the team transition from being followers to leaders</li>
+                                                      <li>Empower the team to use their strengths to inspire, influence, and energize others</li>
+                                                      <li> Create psychological safety among team members and encourage open expression of views</li>
+                                                      <li> Nurture new talent across the three locations</li>
+                                                      <li> Infuse a sense of “one team” and foster collaboration by working on collaborative projects across the organization</li>
+                                                    </ul>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" class="section-img">
+                                                <img mc:edit="b2" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/54dd5519-dc9c-e26e-cba7-9b78a45886e2.png" style="display: block; width:100%; max-width:100%; border-radius:10px;" width="100%" border="0" alt="section image" />
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+                                                    <p>This six-month-long program began in early January with strength assessments and self-reflection exercises for the entire staff, 360’s and ongoing one-on-one coaching for the nine senior leaders in order to enhance, sharpen, and further develop their skills. Staff participated in a two-day in-person workshop to enhance awareness of self and of others through creating connections, enhancing collaboration, and having meaningful conversations. They are currently working on cross-functional team projects to deepen collaboration with periodic check-ins with me and their coaches. We will report on the result of this work at the June Study Trip.</p>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                </tr>
+                                <tr align="right" bgcolor="white">
+                                  <td align="right" class="center-on-narrow">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="40%" class="horizontal-rule">
+                                      <tr>
+                                        <td align="center" valign="top" width="50%" height="5" style="background-color:#f47c20;; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 0px;">
+                                          <!--[if gte mso 15]>&nbsp;
+                                                                                       
+                                                    <![endif]-->
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container">
+                    <tr>
+                      <td>
+                        <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td ">
+                          <tr>
+                            <td>
+                              <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; " class="email-container">
+                                <tr>
+                                  <td height="5" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="email-container-td" style="padding-left:10px; padding-right:10px;">
+                                      <tr>
+                                        <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center" mc:edit="t7a1" style="color: #f47c20;font-weight: bold;font-family:Roboto, Helvetica, Georgia, serif, Arial !important;font-size:30px;line-height:52px;" class="text_color">
+                                          <!-- ======= section subtitle ====== -->
+                                          <div class="editable_text" style="line-height:45px;">
+                                            <span class="text_container"> Feedback from staff members </span>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td align="center" class="section-img">
+                                          <img mc:edit="b2" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/f8e2d320-b094-f8bd-b37c-09c3e3f79195.png" style="display: block; width:100%; max-width:100%; border-radius:10px;" width="100%" border="0" alt="section image" />
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container">
+                    <tr>
+                      <td>
+                        <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td ">
+                          <tr>
+                            <td>
+                              <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; " class="email-container">
+                                <tr>
+                                  <td height="5" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="email-container-td" style="padding-left:10px; padding-right:10px;">
+                                      <tr>
+                                        <td width="100%" align="center">
+                                          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td align="left" mc:edit="t8c" style="font-size:15px;color:#191b1b;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px; " class="text_color">
+                                                <div class="editable_text" style="line-height:27px;">
+                                                  <span class="text_container"> “The two-day workshop has helped me co-create a space to help each one learn, grow and contribute.” - <b>Jemmy </b>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="15" style="font-size:5px; line-height:15px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td width="100%" align="center">
+                                          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td align="left" mc:edit="t8c" style="font-size:15px;color:#191b1b;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px; " class="text_color">
+                                                <div class="editable_text" style="line-height:27px;">
+                                                  <span class="text_container"> “We get real coaching that pushes us to do projects or take actions that demonstrate our learning and growth to be better versions of ourselves.” - <b>Hope</b>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="15" style="font-size:5px; line-height:15px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td width="100%" align="center">
+                                          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td align="left" mc:edit="t8c" style="font-size:15px;color:#191b1b;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px; " class="text_color">
+                                                <div class="editable_text" style="line-height:27px;">
+                                                  <span class="text_container"> “Walking alone, one goes fast; walking together, one goes far.’ I look forward to proactively applying what I learned and walking side-by-side as we make changes and breakthroughs together in Asia and beyond.” - <b>Rachel</b>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="10" style="font-size:5px; line-height:10px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td width="100%" align="center">
+                                          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td align="left" mc:edit="t8c" style="font-size:15px;color:#191b1b;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px; " class="text_color">
+                                                <div class="editable_text" style="line-height:27px;">
+                                                  <span class="text_container"> “The workshop not only brought awareness to the different levels of listening and communication styles but also provided valuable opportunities to practice them with my peers.” - <b>Taeko</b>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="15" style="font-size:5px; line-height:15px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td width="100%" align="center">
+                                          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td align="left" mc:edit="t8c" style="font-size:15px;color:#191b1b;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px; " class="text_color">
+                                                <div class="editable_text" style="line-height:27px;">
+                                                  <span class="text_container"> “Proust famously wrote, ‘The real voyage of discovery consists not in seeking new lands but seeing with new eyes.’ I hope to see with fresh eyes, and see perspectives from appreciating the strengths of others—rather than seeing roadblocks as permanent or negative indicators.” - <b>Trudy</b>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- ======= Section Details ======= -->
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td">
+                    <tr>
+                      <td>
+                        <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container">
+                          <tr>
+                            <td>
+                              <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="#055d30" class="email-container-td" style=" border-top:5px solid #f47c20;">
+                                <tr>
+                                  <td>
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; " class="email-container">
+                                      <tr>
+                                        <td align="center">
+                                          <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="email-container-td" style="padding-left:10px; padding-right:10px;">
+                                            <tr>
+                                              <td height="30" style="font-size:5px; line-height:30px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                            <tr>
+                                              <td align="center" mc:edit="t2b" style="color:#FFF;font-weight: bold;font-family:Roboto, Helvetica, Georgia, serif, Arial !important;font-size:30px;line-height:52px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:40px;">
+                                                  <span class="text_container"> Staffing Updates </span>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="center-on-narrow">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="150" style="margin:0 auto !important;" class="horizontal-rule">
+                                                  <tr>
+                                                    <td align="center" valign="top" width="150" height="3" style="background-color:#FFF; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 0px;">
+                                                      <!--[if gte mso 15]>&nbsp;
+                                                                                       
+                                                                                                                              
+                                                                                  
+                                                                                          
+                                                                <![endif]-->
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#FFF;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+                                                    <p>We are currently interviewing finalists for the Educational Technology Officer. This is an important position for us both internally, given our technology needs, as well as externally, as the impact of technology on higher education grows and our programming tries to keep pace.</p>
+                                                    <p>The search for a Vice President for Programs (VPP) is on pause and I will continue to serve in the role as VPP and President. In the past months we have worked together well, collaborated across offices, and have functioned at a very high level. This arrangement will help maintain our current momentum, streamline our operations, and help flatten the organization’s structure. The request for me to continue in this capacity came from the program directors themselves after the staff development workshop. After consulting with the Board Chair, the Program Committee Chair, and the senior team, I have agreed. Going forward, I believe I can fulfil these responsibilities, provided I have the necessary support. After much deliberation, we have found this support in Ms. Rachel Zhang, who has been Program Officer for Leadership Development. She has a strong track record in international education development, cross-programming, and multi-location operations. She is a quick learner, has the necessary disposition, and she understands the United Board. Rachel will serve as Assistant Director for Strategy and Operations and will directly report to me. We will review this arrangement after two years and adjust as needed. </p>
+                                                    <p>While I will continue to manage my other reporting lines, Finance and Administration will now report directly to Mr. Ricky Cheng. His strength in this area will add much and will help balance some of my workload.</p>
+                                                    <p>Also, Ms. Jane Chan has successfully completed her probation period and has shown significant capacity and potential for growth. Since 1 March 2024, Jane has served as Program Manager. </p>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#FFF;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+                                                    <p>Thank you for your continued support and guidance. Working together we are discerning how best to direct our energy and focus our resources in the service of Christian higher education in Asia. </p>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <!-- ======= Section Details ======= -->
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td">
+                    <tr>
+                      <td>
+                        <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container">
+                          <tr>
+                            <td>
+                              <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td ">
+                                <tr>
+                                  <td>
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-top:5px solid #f47c20;" class="email-container">
+                                      <tr>
+                                        <td align="center">
+                                          <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="email-container-td" style="padding-left:10px; padding-right:10px;">
+                                            
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                            <tr>
+                                              <td align="center" mc:edit="t2b" style="color:#055d30;font-weight: bold;font-family:Roboto, Helvetica, Georgia, serif, Arial !important;font-size:30px;line-height:52px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:40px;">
+                                                  <span class="text_container"> Tentative Schedule of Board Meeting and Study Trip in Indonesia in June 2024 </span>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="center-on-narrow">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="150" style="margin:0 auto !important" class="horizontal-rule">
+                                                  <tr>
+                                                    <td align="center" valign="top" width="74" height="3" style="background-color:#055d30; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 0px;">
+                                                      <!--[if gte mso 15]>&nbsp;
+                                                                                       
+                                                                                                                              
+                                                                                  
+                                                                                          
+                                                                <![endif]-->
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+
+
+                                                    <ul>
+                                                      
+                                                      <li><b>8-9 June 2024</b> - Trustees arrive in Yogyakarta, Indonesia</li>
+                                                      <li><b>10 June 2024</b> -  Board discussions and sight-seeing trip</li>
+                                                      <li><b>11 June 2024</b> -  Board Development Retreat</li>
+                                                      <li><b>12 June 2024</b> -  Staff presentations and Board Development Debrief</li>
+                                                      <li><b>13 June 2024</b> -  Institutional visits and Symposium on Generative AI</li>
+                                                      <li><b>14 June 2024</b> -  Institutional visit and Board Business Meeting</li>
+                                                      <li><b>15 June 2024</b> -  Report on staff development and short workshop</li>
+                                                    </ul>
+                                                      (Trustees may depart from Yogyakarta after lunch)
+
+
+                                                    </ul>
+                                                   
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                </tr>
+                                
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td" bgcolor="e2e3e3">
+                    <tr>
+                      <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" class="email-container-td">
+                          <tr>
+                            <td align="center">
+                              <table border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td>
+                                          <a href="https://www.facebook.com/profile.php?id=61556099849582" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/65ea3bc8-c148-404a-44c3-0b5d7df3a1f0.png" width="32" border="0" style="display: block; width: 32px; min-width:32px;" alt="facebook" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://twitter.com/unitedboard1922   " target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/b05c8e3c-4d48-6d0e-ffd6-c20881668ac0.png" width="32" border="0" style="display: block; width: 32px; min-width:32px;" alt="X" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://hk.linkedin.com/company/united-board-for-christian-higher-education-in-asia" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" width="32" border="0" style="display: block; width: 32px; min-width:32px;" src="https://mcusercontent.com/58784ae3015d8ec91037812df/images/2ded43f0-59aa-7e61-669f-5fe98f2f24c8.png" alt="linkedin" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://www.instagram.com/unitedboard1922/" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" width="32" border="0" style="display: block; width: 32px; min-width:32px;" src="https://mcusercontent.com/614876d209af876013436a98c/images/3fcf2749-ad1b-d56e-1fa9-e1a4be6fb58f.png" alt="insta" />
+                                          </a>
+                                        </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="color: #000; font-size: 13px; font-family: 'Roboto', Helvetica, Georgia, serif, Arial; line-height: 24px;" class="text_color">
+                              <!-- ======= section text ====== -->
+                              <div class="editable_text" style="line-height: 20px">
+                                <span class="text_container">
+                                  <b>Copyright © United Board for Christian Higher Education in Asia - All Rights Reserved.</b>
+                                  <br />
+                                  <br />
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="color: #000000; font-size: 13px;  font-family: 'Roboto', Helvetica, Georgia, serif, Arial; line-height: 24px;" class="text_color">
+                              <!-- ======= section text ====== -->
+                              <div class="editable_text" style="line-height: 20px">
+                                <span class="text_container"> 475 Riverside Drive , Suite 1221, <br />New York, NY 10115 <br />
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <!-- ======= end footer ======= -->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Footer : END -->
+            </table>
+    </center>
+  </body>
+</html>
