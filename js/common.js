@@ -28,5 +28,26 @@ $(document).ready(function() {
         })
     }
 
-    $("script").remove();
+    //Fancybox Gallery
+    
+    $(".fancybox-gallery img").each(function() {
+        var $link = $("<a />").attr({"href":$(this).attr("src"), "data-fancybox":"gallery"});
+        $(this).wrap($link);
+    });
+    
+    
+    $("[data-fancybox='gallery']").fancybox({
+        buttons: ['zoom', 'slideShow', 'thumbs', 'close'],    // show only close button
+        arrows: true,    // show only close button
+        iframe : {
+            preload : false
+        },
+        animationEffect: "zoom",
+        transitionEffect: "fade",
+        loop: true
+    })
+
+    if ($("[data-fancybox='gallery']").length == 0) {
+        $("script").remove();
+    }
 })

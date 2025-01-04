@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="../../js/jquery.fancybox.min.css" rel="stylesheet">
     <!-- Tell iOS not to automatically link certain text strings. -->
     <title>Unitedboard Board Brief - January 2025</title>
     <!-- CSS Reset : BEGIN -->
@@ -492,7 +493,7 @@
                                               <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                              <td align="center" class="section-img">
+                                              <td align="center" class="section-img fancybox-gallery">
                                                 <img mc:edit="b2" src="./images/202501_02_01.jpg" style="display: block; width:auto; max-height:300px; border-radius:10px;" width="auto" border="0" alt="section image" />
                                               </td>
                                             </tr>
@@ -516,10 +517,18 @@
                                             </tr>
                                             <tr>
                                               <td align="center" class="section-img">
-                                                <img mc:edit="b2" src="./images/202501_02_02.jpg" style="display: block; width:auto; max-height:300px; border-radius:10px;"  border="0" alt="section image" /><br/>
-                                                <img mc:edit="b2" src="./images/202501_02_03.jpg" style="display: block; width:auto; max-height:300px; border-radius:10px;"  border="0" alt="section image" /><br/>
-                                                <img mc:edit="b2" src="./images/202501_02_04.jpg" style="display: block; width:auto; max-height:300px; border-radius:10px;"  border="0" alt="section image" /><br/>
-                                                <img mc:edit="b2" src="./images/202501_02_05.jpg" style="display: block; width:auto; max-height:300px; border-radius:10px;"  border="0" alt="section image" /><br/>
+                                                <table class="fancybox-gallery">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td><img mc:edit="b2" src="./images/202501_02_02.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;"  border="0" alt="section image" /></td>
+                                                      <td><img mc:edit="b2" src="./images/202501_02_03.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;"  border="0" alt="section image" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td><img mc:edit="b2" src="./images/202501_02_04.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;"  border="0" alt="section image" /></td>
+                                                      <td><img mc:edit="b2" src="./images/202501_02_05.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;"  border="0" alt="section image" /></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
                                               </td>
                                             </tr>
                                             <tr>
@@ -651,6 +660,7 @@
             </table>
     </center>
     <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/jquery.fancybox.min.js"></script>
     <script src="../../js/common.js"></script>
   </body>
 </html>
