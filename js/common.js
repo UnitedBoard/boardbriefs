@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     if (window.matchMedia("(max-width: 767px)").matches) {
         // The viewport is less than 768 pixels wide 
-        $("[data-fancybox='youtube']").removeAttr("data-fancybox");
+        $(".youtube[data-fancybox]").removeAttr("data-fancybox");
     } else {
         // The viewport is more than 768 pixels wide 
     }
