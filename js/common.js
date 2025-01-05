@@ -18,7 +18,9 @@ $(document).ready(function() {
         })
         $("a[href]").each(function() {
             var strlink = $(this).attr("href").replace(/^\.\/([^/])/, "$1");
-            if(!/^https?:\/\//.test(strlink)) {
+            if(/^(mailto|tel):/.test(strlink)) {
+                //Do Nothing
+            } else if(!/^https?:\/\//.test(strlink)) {
                 if(strlink[0] == "/") {
                     $(this).attr("href", hostnamepath + strlink)
                 } else {
