@@ -236,7 +236,27 @@
       img {
         width: 100%;
       }
+
+      .video-overlay {
+        position: relative;
+      }
+
+      .video-overlay::before {
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index: 1;
+        background-color: rgba(0.3, 0.3, 0.3, 0.3);
+        background-image: url(./images/play-button-icon.png);
+        background-size: 55px 55px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     </style>
+
   </head>
   <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #e2e3e3;">
     <div style="width: 100%; background-color: #e2e3e3;">
@@ -554,6 +574,25 @@
                                                 </div>
                                               </td>
                                             </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                              <tr>
+                                                <td align="center" class="section-img">
+                                                  <table class="fancybox-gallery2">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td><a href="./images/drama_therapy.mp4" data-fancybox="gallery" target="_blank" class="youtube video-overlay"><img src="./images/202505_02_07v.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;"  border="0" /></a></td>
+                                                        <td><a href="./images/AACM_theme_song.mp4" data-fancybox="gallery" target="_blank" class="youtube video-overlay"><img src="./images/202505_02_08v.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;"  border="0" /></a></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><a href="./images/blocks_building.mp4" data-fancybox="gallery" target="_blank" class="youtube video-overlay"><img src="./images/202505_02_09v.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;"  border="0" /></a></td>
+                                                        <td><a href="./images/aacm_means_to_me.mp4" data-fancybox="gallery" target="_blank" class="youtube video-overlay"><img src="./images/202505_02_10v.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;"  border="0" /></a></td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
                                             <tr>
                                               <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
                                             </tr>
