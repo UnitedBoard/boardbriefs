@@ -1,0 +1,810 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="../../js/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <title>Unitedboard Board Brief - August 2026</title>
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      /*html,
+         body {
+         margin: 0 !important;
+         padding: 0 !important;
+         height: 100% !important;
+         width: 100% !important;
+         } */
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      p {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+      }
+
+      .tleft {
+        text-align: left;
+      }
+
+      .tright {
+        text-align: right;
+      }
+
+      .img_center {
+        float: none;
+        margin: 0 auto;
+      }
+
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        u~div .email-container {
+          min-width: 320px !important;
+        }
+      }
+
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u~div .email-container {
+          min-width: 375px !important;
+        }
+      }
+
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+        u~div .email-container {
+          min-width: 414px !important;
+        }
+      }
+    </style>
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+          <xml>
+            <o:OfficeDocumentSettings>
+              <o:AllowPNG/>
+              <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+          </xml>
+          <![endif]-->
+    <!-- CSS Reset : END -->
+    <style>
+      /* What it does: Hover styles for buttons */
+      .button-td,
+      .button-a {
+        transition: all 100ms ease-in;
+      }
+
+      .button-td-primary-blue:hover,
+      .button-a-primary-blue:hover {
+        background: #3722D3 !important;
+        color: #FFFFFF !important;
+      }
+
+      .button-td-primary-bgreen:hover,
+      .button-a-primary-bgreen:hover {
+        background: #00FF84 !important;
+        color: #002333 !important;
+      }
+
+      .rounded {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 375px) {
+        .buttona {
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .tleft {
+          text-align: center;
+        }
+
+        .tright {
+          text-align: center;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .hide {
+          display: none !important;
+        }
+
+        .mobile-padding {
+          padding: 32px !important;
+        }
+
+        .section-title {
+          padding-left: 26px !important;
+          padding-right: 26px !important;
+        }
+
+        .section-wrap {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .email-title {
+          font-size: 16px !important;
+        }
+
+        .header-wrap {
+          padding-left: 26px !important;
+          padding-right: 26px !important;
+        }
+
+        .mobile-button {
+          width: 100% !important;
+        }
+
+        .mobile-header {
+          padding-left: 35px !important;
+          padding-right: 10px !important;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .buttona {
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .tleft {
+          text-align: center;
+        }
+
+        .tright {
+          text-align: center;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .hide {
+          display: none !important;
+        }
+
+        .email-container {
+          width: 100% !important;
+          margin: auto !important;
+        }
+
+        .email-container-td {
+          width: 100% !important;
+          margin: auto !important;
+        }
+
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+
+        .center-on-narrow {
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+
+        .rtlheader-text {
+          padding-left: 18px !important;
+          padding-right: 18px !important;
+        }
+
+        .rtl-mobile-pad {
+          padding-left: 35px !important;
+          padding-right: 35px !important;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #e2e3e3;">
+    <div style="width: 100%; background-color: #e2e3e3;">
+      <!--[if mso | IE]>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e2e3e3;">
+              <tr>
+                <td>
+                  <![endif]-->
+      <!-- Visually Hidden Preheader Text : BEGIN -->
+      <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;"></div>
+      <!-- Visually Hidden Preheader Text : END -->
+      <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+      <!-- Preview Text Spacing Hack : BEGIN -->
+      <!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+      <div style="display: none; max-height: 0px; overflow: hidden;"> &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; </div>
+      <!-- Preview Text Spacing Hack : END -->
+      <!-- Email Body : BEGIN -->
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="625" style="margin: auto; width:625px; padding-right:2px; padding-left:2px;" class="email-container">
+        <tr>
+          <td>
+            <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td ">
+              <tr>
+                <td>
+                  <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; " class="email-container-td">
+                    <tr>
+                      <td align="center">
+                        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                          <tr>
+                            <td>
+                              <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                                      <tr>
+                                        <td height="5" style="font-size:5px; line-height:5px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                        <td height="5" style="font-size:5px; line-height:5px;">&nbsp;</td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- ======= Pre-Header ======= -->
+            <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td">
+              <tr>
+                <td>
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td " style="min-width:450px">
+                    <tr>
+                      <td>
+                        <table border="0" width="250" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; float:left;" class="email-container-td">
+                          <!-- ======= section image 290 X any height ====== -->
+                          <tr>
+                            <td height="15" style="font-size:5px; line-height:15px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" class="section-img">
+                              <a href="https://unitedboard.org/" target="_blank" style=" border-style: none !important; border: 0 !important;" class="editable_img">
+                                <img src="./images/719f2623-624f-60fc-977a-da2bc8d06511.png" style="display: block; width:230px; max-width:230px;" width="230" border="0" alt="section image" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="15" style="font-size:5px; line-height:15px;" class="hide">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <table border="0" width="190" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; float:right;" class="email-container-td">
+                          <tr>
+                            <td height="20" style="font-size:5px; line-height:20px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <table align="center" width="120" border="0" cellpadding="0" cellspacing="0" class="email-container-td">
+                                <tr>
+                                  <td height="10" style="font-size:10px; line-height:10px;" class="hide">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <table border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td>
+                                          <a href="https://www.facebook.com/profile.php?id=61556099849582" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" src="./images/65ea3bc8-c148-404a-44c3-0b5d7df3a1f0.png" width="32" border="0" style="display: block; width: 32px; min-width:32px;" alt="facebook" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://twitter.com/unitedboard1922   " target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" src="./images/b05c8e3c-4d48-6d0e-ffd6-c20881668ac0.png" width="32" border="0" style="display: block; width: 32px; min-width:32px;" alt="X" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://hk.linkedin.com/company/united-board-for-christian-higher-education-in-asia" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" width="32" border="0" style="display: block; width: 32px; min-width:32px;" src="./images/2ded43f0-59aa-7e61-669f-5fe98f2f24c8.png" alt="linkedin" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://www.instagram.com/unitedboard1922/" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" width="32" border="0" style="display: block; width: 32px; min-width:32px;" src="./images/3fcf2749-ad1b-d56e-1fa9-e1a4be6fb58f.png" alt="insta" />
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- ======= end section ======= -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- ======= Section Details ======= -->
+            <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td">
+              <tr>
+                <td>
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container">
+                    <tr>
+                      <td>
+                        <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td ">
+                          <tr>
+                            <td height="15" style="font-size:20px; line-height:15px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" mc:edit="t1a" style="color:#055d30;font-weight: bold;font-family:Poppins, Helvetica, Georgia, serif, Arial !important;font-size:50px;line-height:52px;" class="text_color">
+                              <!-- ======= section subtitle ====== -->
+                              <div class="editable_text" style="line-height:40px;">
+                                <span class="text_container"> Board Briefs</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="5" style="font-size:5px; line-height:5px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" mc:edit="t1a" style="color:#055d30;font-weight: bold;font-family:Poppins, Helvetica, Georgia, serif, Arial !important;font-size:28px;line-height:52px;" class="text_color">
+                              <!-- ======= section subtitle ====== -->
+                              <div class="editable_text" style="line-height:40px;">
+                                <span class="text_container">
+                                  <span style="color:#f47c20;">August 2026</span>
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="10" style="font-size: 5px; line-height:10px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-top:5px solid #f47c20;" class="email-container" bgcolor="white">
+                                <tr>
+                                  <td height="5" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="email-container-td" style="padding-left:10px; padding-right:10px;">
+                                      <tr>
+                                        <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- ======= Section Details ======= -->
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td">
+                    <tr>
+                      <td>
+                        <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container">
+                          <tr>
+                            <td>
+                              <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFFFFF" class="email-container-td ">
+                                <tr>
+                                  <td>
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; " class="email-container">
+                                      <tr>
+                                        <td align="center">
+                                          <table align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="email-container-td" style="padding-left:10px; padding-right:10px;">
+                                            <tr>
+                                                <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                              </tr>
+                                              <tr>
+                                                <td align="center" class="section-img fancybox-gallery">
+                                                  <img mc:edit="b2" src="./images/202608_02_01.jpg" style="display: block; width:100%; max-height:300px; border-radius:10px;" width="auto" border="0" alt="section image" />
+                                                </td>
+                                              </tr>
+                                            <tr>
+                                              <td height="30" style="font-size:5px; line-height:30px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" mc:edit="t2b" style="color:#055d30;font-weight: bold;font-family:Roboto, Helvetica, Georgia, serif, Arial !important;font-size:30px;line-height:52px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:40px;">
+                                                  <span class="text_container">A Passage to India</span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" class="center-on-narrow">
+                                                <table cellspacing="0" cellpadding="0" border="0" width="150" style="margin:0 auto !important" class="horizontal-rule">
+                                                  <tr>
+                                                    <td align="center" valign="top" width="74" height="3" style="background-color:#055d30; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 0px;">
+                                                      <!--[if gte mso 15]>&nbsp;
+                                                                <![endif]-->
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+                                                    <p>The week of June 7 to 12 was filled with warm welcomes, candid conversations, and shared celebrations. Our annual study trip began in Chennai with an evening reception featuring a keynote presentation on the trends of Indian higher education, alumni testimonies, and a heartfelt farewell to Dr. <strong>Paul Appasamy</strong>, marked with a celebration of his birthday. The next day, we visited two of our longest-standing partners, <strong>Women's Christian College</strong> and </strong>Madras Christian College</strong>, where we also launched the new MCC–United Board Mentor Partner Program. </p>
+                                                    <p>In Bengaluru, <strong>CHRIST (Deemed to be University)</strong> hosted us across its Kengeri and central campuses, where we met participants in the Leadership Hub program, and witnessed the launch of the Strategic Orientation for Academic Resilience (SOAR) initiative. The day was capped by student cultural performances and a gala dinner marking 25 years of partnership. </p>
+                                                    <p>The trip ended in West Bengal, where we visited <strong>Salesian College</strong> at its Siliguri campus before travelling up into the Darjeeling hills for our Business Meeting and the rest of the itinerary. The photos that follow capture something of the hospitality, energy, and friendship that accompanied us at every stop.</p>
+                                                    <p>The Trustee Survey and Reflections follow at the end of this section.</p>
+
+                                                    <ul>
+                                                      <li><a href="india.html#reception_in_chennai-1">Reception in Chennai</a></li>
+                                                      <li><a href="india.html#womens_christian_college-1">Women’s Christian College</a></li>
+                                                      <li><a href="india.html#madras_christian_college-1">Madras Christian College</a></li>
+                                                      <li><a href="india.html#christ_kengeri-1">CHRIST (Deemed to be University), Kengeri campus</a></li>
+                                                      <li><a href="india.html#christ_bengarulu-1">CHRIST (Deemed to be University), Bengarulu campus</a></li>
+                                                      <li><a href="india.html#salesian_siliguri-1">Salesian College, Siliguri campus</a></li>
+                                                      <li><a href="india.html#business_meeting-1">Board Business Meeting</a></li>
+                                                      <li><a href="./images/india/Trustee Reflection Survey Results - Board Meeting and Study Trip in India_June 2026 - 20260713.pdf" target="_blank">Trustee Survey and Reflections</a></li>
+                                                    </ul>
+                                                  </span>
+                                                </div>
+                                                <div id="photo-albums" style="display:none;">
+                                                  <div id="board-business-meeting" class="fancybox-gallery2">
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_093314.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_093314.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_093616.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_093616.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_093913.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_093913.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_094436.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_094436.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_095053.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_095053.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_102435.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_102435.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_102840.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_102840.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_103256.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_103256.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_103259.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_103259.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_103322.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_103322.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_103417.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_103417.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_104159.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_104159.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_104212.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_104212.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_104902.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_104902.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_105029.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_105029.jpg"></a>
+                                                    <a data-fancybox="business_meeting" href="./images/india/business_meeting/20260612_105050.jpg"><img src="./images/india/business_meeting/thumbnail/20260612_105050.jpg"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/20260609_161308.jpg"><img src="./images/india/christ_bengarulu/20260609_161308.jpg"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/20260609_192850.jpg"><img src="./images/india/christ_bengarulu/20260609_192850.jpg"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/20260609_192856.jpg"><img src="./images/india/christ_bengarulu/20260609_192856.jpg"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/20260609_193744.jpg"><img src="./images/india/christ_bengarulu/20260609_193744.jpg"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/20260609_194054.jpg"><img src="./images/india/christ_bengarulu/20260609_194054.jpg"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/20260609_194840.jpg"><img src="./images/india/christ_bengarulu/20260609_194840.jpg"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/20260609_194844.jpg"><img src="./images/india/christ_bengarulu/20260609_194844.jpg"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/IMG_1568.JPG"><img src="./images/india/christ_bengarulu/IMG_1568.JPG"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/IMG_1588.JPG"><img src="./images/india/christ_bengarulu/IMG_1588.JPG"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/IMG_1590.JPG"><img src="./images/india/christ_bengarulu/IMG_1590.JPG"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/IMG_1602.JPG"><img src="./images/india/christ_bengarulu/IMG_1602.JPG"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/IMG_1605.JPG"><img src="./images/india/christ_bengarulu/IMG_1605.JPG"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/IMG_1615.JPG"><img src="./images/india/christ_bengarulu/IMG_1615.JPG"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/IMG_1637.JPG"><img src="./images/india/christ_bengarulu/IMG_1637.JPG"></a>
+                                                    <a data-fancybox="christ_bengarulu" href="./images/india/christ_bengarulu/IMG_1670.JPG"><img src="./images/india/christ_bengarulu/IMG_1670.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_092758.mp4"><img src="./images/india/christ_kengeri/20260609_092758.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_095101.mp4"><img src="./images/india/christ_kengeri/20260609_095101.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_095147.mp4"><img src="./images/india/christ_kengeri/20260609_095147.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_100958.jpg"><img src="./images/india/christ_kengeri/20260609_100958.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_102225.jpg"><img src="./images/india/christ_kengeri/20260609_102225.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_103202.jpg"><img src="./images/india/christ_kengeri/20260609_103202.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_103221.jpg"><img src="./images/india/christ_kengeri/20260609_103221.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_103502.jpg"><img src="./images/india/christ_kengeri/20260609_103502.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_103528.jpg"><img src="./images/india/christ_kengeri/20260609_103528.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_103558.jpg"><img src="./images/india/christ_kengeri/20260609_103558.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_103937.mp4"><img src="./images/india/christ_kengeri/20260609_103937.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_103953.mp4"><img src="./images/india/christ_kengeri/20260609_103953.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_104046.mp4"><img src="./images/india/christ_kengeri/20260609_104046.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_104224.jpg"><img src="./images/india/christ_kengeri/20260609_104224.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_104233.jpg"><img src="./images/india/christ_kengeri/20260609_104233.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_104531.jpg"><img src="./images/india/christ_kengeri/20260609_104531.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_104559.jpg"><img src="./images/india/christ_kengeri/20260609_104559.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_104635.mp4"><img src="./images/india/christ_kengeri/20260609_104635.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_104828.jpg"><img src="./images/india/christ_kengeri/20260609_104828.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_104840.jpg"><img src="./images/india/christ_kengeri/20260609_104840.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_105502.jpg"><img src="./images/india/christ_kengeri/20260609_105502.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_105550.mp4"><img src="./images/india/christ_kengeri/20260609_105550.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_110051.jpg"><img src="./images/india/christ_kengeri/20260609_110051.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_110103.jpg"><img src="./images/india/christ_kengeri/20260609_110103.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_110349.mp4"><img src="./images/india/christ_kengeri/20260609_110349.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_111050.jpg"><img src="./images/india/christ_kengeri/20260609_111050.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_111113.jpg"><img src="./images/india/christ_kengeri/20260609_111113.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_111357.jpg"><img src="./images/india/christ_kengeri/20260609_111357.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_114028.mp4"><img src="./images/india/christ_kengeri/20260609_114028.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_114241.jpg"><img src="./images/india/christ_kengeri/20260609_114241.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_121322.jpg"><img src="./images/india/christ_kengeri/20260609_121322.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_121343.jpg"><img src="./images/india/christ_kengeri/20260609_121343.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_121422.jpg"><img src="./images/india/christ_kengeri/20260609_121422.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_121545.mp4"><img src="./images/india/christ_kengeri/20260609_121545.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_123114.jpg"><img src="./images/india/christ_kengeri/20260609_123114.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_132412.jpg"><img src="./images/india/christ_kengeri/20260609_132412.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/20260609_133533.mp4"><img src="./images/india/christ_kengeri/20260609_133533.mp4"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG-20260609-WA0025.jpg"><img src="./images/india/christ_kengeri/IMG-20260609-WA0025.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG-20260609-WA0048.jpg"><img src="./images/india/christ_kengeri/IMG-20260609-WA0048.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG-20260609-WA0062.jpg"><img src="./images/india/christ_kengeri/IMG-20260609-WA0062.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG-20260609-WA0065.jpg"><img src="./images/india/christ_kengeri/IMG-20260609-WA0065.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG-20260609-WA0088.jpg"><img src="./images/india/christ_kengeri/IMG-20260609-WA0088.jpg"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1482.JPG"><img src="./images/india/christ_kengeri/IMG_1482.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1486.JPG"><img src="./images/india/christ_kengeri/IMG_1486.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1487.JPG"><img src="./images/india/christ_kengeri/IMG_1487.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1488.JPG"><img src="./images/india/christ_kengeri/IMG_1488.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1489.JPG"><img src="./images/india/christ_kengeri/IMG_1489.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1497.JPG"><img src="./images/india/christ_kengeri/IMG_1497.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1500.JPG"><img src="./images/india/christ_kengeri/IMG_1500.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1503.JPG"><img src="./images/india/christ_kengeri/IMG_1503.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1507.JPG"><img src="./images/india/christ_kengeri/IMG_1507.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1511.JPG"><img src="./images/india/christ_kengeri/IMG_1511.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1514.JPG"><img src="./images/india/christ_kengeri/IMG_1514.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1516.JPG"><img src="./images/india/christ_kengeri/IMG_1516.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1518.JPG"><img src="./images/india/christ_kengeri/IMG_1518.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1520.JPG"><img src="./images/india/christ_kengeri/IMG_1520.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1522.JPG"><img src="./images/india/christ_kengeri/IMG_1522.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1525.JPG"><img src="./images/india/christ_kengeri/IMG_1525.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1527.JPG"><img src="./images/india/christ_kengeri/IMG_1527.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1531.JPG"><img src="./images/india/christ_kengeri/IMG_1531.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1534.JPG"><img src="./images/india/christ_kengeri/IMG_1534.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1540.JPG"><img src="./images/india/christ_kengeri/IMG_1540.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1541.JPG"><img src="./images/india/christ_kengeri/IMG_1541.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1545.JPG"><img src="./images/india/christ_kengeri/IMG_1545.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1548.JPG"><img src="./images/india/christ_kengeri/IMG_1548.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1552.JPG"><img src="./images/india/christ_kengeri/IMG_1552.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1553.JPG"><img src="./images/india/christ_kengeri/IMG_1553.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1555.JPG"><img src="./images/india/christ_kengeri/IMG_1555.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1556.JPG"><img src="./images/india/christ_kengeri/IMG_1556.JPG"></a>
+                                                    <a data-fancybox="christ_kengeri" href="./images/india/christ_kengeri/IMG_1560.JPG"><img src="./images/india/christ_kengeri/IMG_1560.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/20260608_120928.jpg"><img src="./images/india/madras_christian_college/20260608_120928.jpg"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG-20260608-WA0006.jpg"><img src="./images/india/madras_christian_college/IMG-20260608-WA0006.jpg"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG-20260608-WA0007.jpg"><img src="./images/india/madras_christian_college/IMG-20260608-WA0007.jpg"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1418.JPG"><img src="./images/india/madras_christian_college/IMG_1418.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1420.JPG"><img src="./images/india/madras_christian_college/IMG_1420.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1421.JPG"><img src="./images/india/madras_christian_college/IMG_1421.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1423.JPG"><img src="./images/india/madras_christian_college/IMG_1423.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1425.JPG"><img src="./images/india/madras_christian_college/IMG_1425.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1428.JPG"><img src="./images/india/madras_christian_college/IMG_1428.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1436.JPG"><img src="./images/india/madras_christian_college/IMG_1436.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1438.JPG"><img src="./images/india/madras_christian_college/IMG_1438.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1446.JPG"><img src="./images/india/madras_christian_college/IMG_1446.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1450.JPG"><img src="./images/india/madras_christian_college/IMG_1450.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1452.JPG"><img src="./images/india/madras_christian_college/IMG_1452.JPG"></a>
+                                                    <a data-fancybox="madras_christian_college" href="./images/india/madras_christian_college/IMG_1455.JPG"><img src="./images/india/madras_christian_college/IMG_1455.JPG"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/20260607_160702.jpg"><img src="./images/india/reception_in_chennai/20260607_160702.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/20260607_190225.jpg"><img src="./images/india/reception_in_chennai/20260607_190225.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/20260607_190804.jpg"><img src="./images/india/reception_in_chennai/20260607_190804.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/20260607_191415.jpg"><img src="./images/india/reception_in_chennai/20260607_191415.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/20260607_205810.jpg"><img src="./images/india/reception_in_chennai/20260607_205810.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/20260607_210152.jpg"><img src="./images/india/reception_in_chennai/20260607_210152.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/20260607_210622.jpg"><img src="./images/india/reception_in_chennai/20260607_210622.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/20260607_211426.jpg"><img src="./images/india/reception_in_chennai/20260607_211426.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/IMG-20260607-WA0057.jpg"><img src="./images/india/reception_in_chennai/IMG-20260607-WA0057.jpg"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/IMG_0864.JPG"><img src="./images/india/reception_in_chennai/IMG_0864.JPG"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/IMG_0929.JPG"><img src="./images/india/reception_in_chennai/IMG_0929.JPG"></a>
+                                                    <a data-fancybox="reception_in_chennai" href="./images/india/reception_in_chennai/IMG_1291.JPG"><img src="./images/india/reception_in_chennai/IMG_1291.JPG"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_131040.jpg"><img src="./images/india/salesian_siliguri/20260610_131040.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_131049.jpg"><img src="./images/india/salesian_siliguri/20260610_131049.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_131148.jpg"><img src="./images/india/salesian_siliguri/20260610_131148.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_135848.jpg"><img src="./images/india/salesian_siliguri/20260610_135848.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_141110.jpg"><img src="./images/india/salesian_siliguri/20260610_141110.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_141146.jpg"><img src="./images/india/salesian_siliguri/20260610_141146.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_141846.jpg"><img src="./images/india/salesian_siliguri/20260610_141846.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_143456.jpg"><img src="./images/india/salesian_siliguri/20260610_143456.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_145248.jpg"><img src="./images/india/salesian_siliguri/20260610_145248.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_150707.jpg"><img src="./images/india/salesian_siliguri/20260610_150707.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_150842.jpg"><img src="./images/india/salesian_siliguri/20260610_150842.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_151200.jpg"><img src="./images/india/salesian_siliguri/20260610_151200.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_151625.jpg"><img src="./images/india/salesian_siliguri/20260610_151625.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_152108.jpg"><img src="./images/india/salesian_siliguri/20260610_152108.jpg"></a>
+                                                    <a data-fancybox="salesian_siliguri" href="./images/india/salesian_siliguri/20260610_154554.jpg"><img src="./images/india/salesian_siliguri/20260610_154554.jpg"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1344.JPG"><img src="./images/india/womens_christian_college/IMG_1344.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1356.JPG"><img src="./images/india/womens_christian_college/IMG_1356.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1357.JPG"><img src="./images/india/womens_christian_college/IMG_1357.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1358.JPG"><img src="./images/india/womens_christian_college/IMG_1358.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1361.JPG"><img src="./images/india/womens_christian_college/IMG_1361.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1366.JPG"><img src="./images/india/womens_christian_college/IMG_1366.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1367.JPG"><img src="./images/india/womens_christian_college/IMG_1367.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1368.JPG"><img src="./images/india/womens_christian_college/IMG_1368.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1375.JPG"><img src="./images/india/womens_christian_college/IMG_1375.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1385.JPG"><img src="./images/india/womens_christian_college/IMG_1385.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1387.JPG"><img src="./images/india/womens_christian_college/IMG_1387.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1392.JPG"><img src="./images/india/womens_christian_college/IMG_1392.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1393.JPG"><img src="./images/india/womens_christian_college/IMG_1393.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1396.JPG"><img src="./images/india/womens_christian_college/IMG_1396.JPG"></a>
+                                                    <a data-fancybox="womens_christian_college" href="./images/india/womens_christian_college/IMG_1401.JPG"><img src="./images/india/womens_christian_college/IMG_1401.JPG"></a>
+                                                  </div>
+                                                </div>
+
+                                              </td>
+                                            </tr>
+                                                <tr>
+                                              <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" mc:edit="t2c" style="font-size:15px;color:#212121;font-family:'Roboto', Helvetica, Georgia, serif, Arial;line-height:27px;" class="text_color">
+                                                <!-- ======= section subtitle ====== -->
+                                                <div class="editable_text" style="line-height:23px;">
+                                                  <span class="text_container">
+                                                    <p>&nbsp;</p>
+                                                    <p><a href="./email.html#02">&gt; Back to main page</a></p>
+                                                  </span>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                              <tr>
+                                                <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                              </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr align="right" bgcolor="white">
+                                  <td align="right" class="center-on-narrow">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="40%" class="horizontal-rule">
+                                      <tr>
+                                        <td align="center" valign="top" width="50%" height="5" style="background-color:#f47c20;; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 0px;">
+                                          <!--[if gte mso 15]>&nbsp;
+                                                                                       
+                                                    <![endif]-->
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table border="0" align="center" width="100%" cellpadding="0" cellspacing="0" class="email-container-td" bgcolor="e2e3e3">
+                    <tr>
+                      <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" class="email-container-td">
+                          <tr>
+                            <td align="center">
+                              <table border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td>
+                                          <a href="https://www.facebook.com/profile.php?id=61556099849582" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" src="./images/65ea3bc8-c148-404a-44c3-0b5d7df3a1f0.png" width="32" border="0" style="display: block; width: 32px; min-width:32px;" alt="facebook" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://twitter.com/unitedboard1922   " target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" src="./images/b05c8e3c-4d48-6d0e-ffd6-c20881668ac0.png" width="32" border="0" style="display: block; width: 32px; min-width:32px;" alt="X" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://hk.linkedin.com/company/united-board-for-christian-higher-education-in-asia" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" width="32" border="0" style="display: block; width: 32px; min-width:32px;" src="./images/2ded43f0-59aa-7e61-669f-5fe98f2f24c8.png" alt="linkedin" />
+                                          </a>
+                                        </td>
+                                        <td>&nbsp;&nbsp;&nbsp;</td>
+                                        <td>
+                                          <a href="https://www.instagram.com/unitedboard1922/" target="_blank" style="display: block; border-style: none !important; border: 0 !important;" class="editable_img">
+                                            <img editable="true" width="32" border="0" style="display: block; width: 32px; min-width:32px;" src="./images/3fcf2749-ad1b-d56e-1fa9-e1a4be6fb58f.png" alt="insta" />
+                                          </a>
+                                        </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="color: #000; font-size: 13px; font-family: 'Roboto', Helvetica, Georgia, serif, Arial; line-height: 24px;" class="text_color">
+                              <!-- ======= section text ====== -->
+                              <div class="editable_text" style="line-height: 20px">
+                                <span class="text_container">
+                                  <b>Copyright © United Board for Christian Higher Education in Asia - All Rights Reserved.</b>
+                                  <br />
+                                  <br />
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="color: #000000; font-size: 13px;  font-family: 'Roboto', Helvetica, Georgia, serif, Arial; line-height: 24px;" class="text_color">
+                              <!-- ======= section text ====== -->
+                              <div class="editable_text" style="line-height: 20px">
+                                <span class="text_container"> 475 Riverside Drive , Suite 1221, <br />New York, NY 10115 <br />
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <!-- ======= end footer ======= -->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Footer : END -->
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/jquery.fancybox.min.js"></script>
+    <script src="../../js/common.js"></script>
+  </body>
+</html>
